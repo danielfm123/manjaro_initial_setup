@@ -1,5 +1,8 @@
 yes | sudo pacman -S yay
 
+#driver wifi
+yes | yay -S rtl8821ce-dkms-git
+
 #optimizar
 yes | sudo cp nano.sh /etc/profile.d/
 yes | sudo cp home_path.sh /etc/profile.d/
