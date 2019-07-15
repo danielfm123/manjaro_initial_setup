@@ -28,3 +28,5 @@ git clone https://danielfm123@bitbucket.org/datarts/bash.git
 
 #cleanup
 yes | yay -Scc
+
+balooctl disble
