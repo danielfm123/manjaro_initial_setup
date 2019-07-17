@@ -33,6 +33,10 @@ cd bin
 git clone https://danielfm123@bitbucket.org/datarts/workspace.git
 yes | cp ~/bin/workspace/workspace.desktop  ~/.local/share/applications/
 
+#Libreoffice
+yes | yay -R calligra
+yes | yay -S libreoffice-fresh
+
 #bash
 cd ~/bin
 git clone https://danielfm123@bitbucket.org/datarts/bash.git
