@@ -1,5 +1,13 @@
 yes | sudo pacman -S yay
 
+#pamac por octopi
+yes | yay -R alpm-octopi-utils octopi-notifier-frameworks octopi
+yes | yay -S pamac pamac-tray-appindicator
+
+#Kernel
+yes | yay -S linux-latest linux-latest-headers linux-lts linux-lts-headers
+
+
 #driver wifi
 yes | yay -S rtl8821ce-dkms-git
 
@@ -15,10 +23,10 @@ sudo systemctl enable --now systemd-swap
 
 #R
 yes | yay -S r tk jre-openjdk-headless jdk-openjdk
-sudo R CMD javarenconf
+sudo R CMD javareconf
 
 #Workspace
-yes | yay -S python python-pip pyside2 python-paramiko python-boto3 aws-cli python-pandas x2go sshpass
+yes | yay -S python python-pip pyside2 python-paramiko python-boto3 aws-cli python-pandas x2goclient sshpass
 cd ~
 mkdir bin
 cd bin
