@@ -1,5 +1,8 @@
 yes | sudo pacman -S yay
 
+#nopass
+sudo cp ./49-nopasswd_global.rules /etc/polkit-1/rules.d/49-nopasswd_global.rules
+
 #pamac por octopi
 yes | yay -R alpm-octopi-utils octopi-notifier-frameworks octopi
 yes | yay -S pamac pamac-tray-appindicator
